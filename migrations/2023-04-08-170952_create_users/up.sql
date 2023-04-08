@@ -1,0 +1,27 @@
+-- Your SQL goes here
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    email TEXT NOT NULL,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL,
+    first_name TEXT,
+    last_name TEXT,
+    is_entrepreneur BOOLEAN NOT NULL DEFAULT false,
+    is_admin BOOLEAN NOT NULL DEFAULT false,
+    is_investor BOOLEAN NOT NULL DEFAULT false,
+    user_type TEXT NOT NULL,
+    cash INTEGER NOT NULL DEFAULT 0,
+    net_assets INTEGER NOT NULL DEFAULT 0,
+    net_liabilities INTEGER NOT NULL DEFAULT 0,
+    net_worth INTEGER NOT NULL DEFAULT 0,
+    profile_pic TEXT,
+    bio TEXT,
+    location TEXT,
+    website TEXT,
+    phone TEXT,
+    facebook TEXT,
+    twitter TEXT,
+    instagram TEXT,
+    linkedin TEXT
+);
